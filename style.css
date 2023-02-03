@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'visby';
+    src: url('Polices/VisbyRoundCF-Heavy.otf');
+  }
+p.connect1 {
+    font-family: 'visby';
+    position: absolute;
+    top: 45%;
+    left: 44%;
+    font-size:x-large;
+    color: white;
+    font-size: clamp(30px, 1vw, 70px)
+
+}
+img.logo {
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+img.main {
+    width: 20%;
+    height: 20%;
+    margin-top: 23%;
+    margin-left: 60%;
+}
+@media (max-width: 480px) {
+    img.main {
+        margin-left: 40%;
+        margin-top: 23%;
+    }
+    
+}
+h1.titre {
+    font-family: 'visby';
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    font-size: 200%;
+}
+button {
+    position: absolute;
+    left: 46%;
+    top: 60%;
+    border-radius :25px; 
+}
+span {
+    font-family: 'visby';
+    color: #78b6fe;
+}
+form {
+    width: 20%;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+p.connect2 {
+    font-family: 'visby';
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    font-size:x-large;
+    color: white;
+    font-size: clamp(30px, 2vw, 70px)
+}
+p.nom {
+    font-size: x-large;
+    font-family: 'visby';
+    color: white;
+    position: absolute;
+    top: 39.6%;
+    right: 62%;
+    font-size: clamp(30px, 1vw, 70px)
+}
+p.mdp {
+    font-size: x-large;
+    font-family: 'visby';
+    color: white;
+    position: absolute;
+    top: 45.5%;
+    right: 62%;
+    font-size: clamp(30px, 1vw, 70px)
+}
