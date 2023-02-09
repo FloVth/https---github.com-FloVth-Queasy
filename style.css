@@ -2,6 +2,15 @@
     font-family: 'visby';
     src: url('Polices/VisbyRoundCF-Heavy.otf');
   }
+.body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #78b6fe;
+    color: #fff;
+}
 p.connect1 {
     font-family: 'visby';
     position: absolute;
@@ -30,7 +39,7 @@ img.main {
     }
     
 }
-h1.titre {
+h1 {
     font-family: 'visby';
     color: white;
     position: absolute;
