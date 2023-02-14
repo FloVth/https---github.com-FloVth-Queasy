@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'visby';
+    font-family: 'Visby';
     src: url('Polices/VisbyRoundCF-Heavy.otf');
-  }
+}
 .body{
     height: 100%;
     margin: 0;
@@ -11,6 +11,22 @@ body{
     background-color: #648BC4;
     color: #fff;
 }
+/*LOGO DU QUEASY*/
+.responsive-image{
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+@media screen and (min-width: 601px) {
+  .responsive-image {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .responsive-image{
+    width: 100px;
+  }  
+}
 p.connect1 {
     font-family: 'visby';
     position: absolute;
@@ -19,12 +35,6 @@ p.connect1 {
     font-size:x-large;
     color: white;
     font-size: clamp(30px, 1vw, 70px)
-
-}
-img.logo {
-    width: 150px;
-    height: 150px;
-    float: left;
 }
 img.main {
     width: 20%;
@@ -90,5 +100,3 @@ p.mdp {
     right: 62%;
     font-size: clamp(30px, 1vw, 70px)
 }
-
-/*ESPACE ELEVE*/
