@@ -15,7 +15,7 @@
         </div>
         <!--TEXT-->
         <h1>Avec QUEASY il n'a jamais été aussi facile de créer son propre quizz !</h1>
-        <button type="button" class="btn btn-light"><span class="btn_connect">Se connecter</span></button>
+        <a href="login.php"><button type="button" class="btn btn-light"><span class="btn_connect">Se connecter</span></button>
         <p class="connect1">Se connecter</p>
         <img src="main.png" class="main">
     </body>

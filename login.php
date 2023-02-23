@@ -3,25 +3,34 @@
 <head>
      <?php
      include('header.php');
-     $mysqlConnection = new PDO( 
-
-      'mysql:host="https://www.db4free.net/phpMyAdmin/index.php?route=/&route=%2F&db=queasy";dbname=queasy;charset=utf8', 
-
-      'florian', 
-
-      'Flori@n1512' );
      ?>
+
 </head>
 <body>
   <div class="Logo-QUEASY">
     <img src="Logo-QUEASY.png" alt="Logo du QUEASY" class="responsive-image" width="250" height="250">
   </div>
-  <form action="check_login.php" method="post">
-            Login<input  type="text" name="login"></input>
+  <form method="post">
+            Identifiant <input  type="text" name="identifiant"></input>
             <div></div>
-            Password <input type='text' name ="password"></input>
+            Mot de passe <input type='text' name ="mdp"></input>
             <input type="submit">
-      <p class="nom">Nom :</p>
-      <p class="mdp">Mot de passe :</p>
+</form> 
+            <?php
+            // Databasesettings
+            $db="queasy";
+            $dbhost="https://www.db4free.net/";
+            $dbport=3306;
+            $dbuser="florian";
+            $dbpasswd="Flori@n1512";
+            $pdo = new PDO('mysql:host='.$dbhost.';port='.$dbport.';dbname='.$db.'', $dbuser, $dbpasswd);
+            $pdo->exec("SET CHARACTER SET utf8");
+            $mdp = $_POST['mdp'];
+            $login = $_POST['identifiant'];
+            $stmt = $pdo->prepare("SELECT * FROM user WHERE login=? AND password=?");
+            $stmt->bindParam(1,$login);
+            $stmt->bindParam(2,$mdp);
+            $stmt->execute();
+            ?>
 </body>
 </html>
