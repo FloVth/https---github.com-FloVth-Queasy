@@ -3,25 +3,24 @@
 <head>
      <?php
      include('header.php');
+     $mysqlConnection = new PDO( 
+
+      'mysql:host="https://www.db4free.net/phpMyAdmin/index.php?route=/&route=%2F&db=queasy";dbname=queasy;charset=utf8', 
+
+      'florian', 
+
+      'Flori@n1512' );
      ?>
 </head>
 <body>
   <div class="Logo-QUEASY">
     <img src="Logo-QUEASY.png" alt="Logo du QUEASY" class="responsive-image" width="250" height="250">
   </div>
-    <p class="connect2">Connectez-Vous !</p>
-    <form>
-        <div class="form-group">
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Votre nom">
-        </div>
-        <br>
-        <div class="form-group">
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Votre mot de passe">
-        </div>
-        <div class="form-check">
-        </div>
-      </form>
-      <button type="button" class="btn btn-light" id="2"><span class="btn_connect">Se connecter</span></button>
+  <form action="check_login.php" method="post">
+            Login<input  type="text" name="login"></input>
+            <div></div>
+            Password <input type='text' name ="password"></input>
+            <input type="submit">
       <p class="nom">Nom :</p>
       <p class="mdp">Mot de passe :</p>
 </body>
