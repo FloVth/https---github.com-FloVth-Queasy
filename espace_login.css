@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Visby';
+    src: url('Polices/VisbyRoundCF-Heavy.otf');
+}
+*{
+    background-color: #648BC4;
+    color: #ffff;
+}
+.body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/*LOGO DU QUEASY*/
+.responsive-image{
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+@media screen and (min-width: 601px) {
+  .responsive-image {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .responsive-image{
+    width: 100px;
+  }  
+}
+/*Text Title*/
+.Grand_Titre{
+    color: #ffffff; 
+    font-family: 'Visby';
+    text-align: center;
+}
+@media screen and (min-width: 601px) {
+    .Grand_Titre {
+      font-size: 70px;
+    }
+}
+  
+  @media screen and (max-width: 600px) {
+    .Grand_Titre {
+      font-size: 30px;
+    }
+}
+/*Espace*/
+.spacing{
+    padding: 10px;
+  }
+  @media screen and (min-width: 601px) {
+    .spacing {
+      padding: 10px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .spacing{
+      padding: 5px;
+    }  
+  }
+/*LABEL*/
+.wrapper{
+    padding: 0 15%;
+    padding-bottom:10px;
+}
+@media (max-width: 684px) {
+    .wrapper {
+      padding: 5px;
+    }
+}
+.content{
+    display: grid; /*Diviser une paege en rÃŠgion*/
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr) );
+}
+.box{
+    padding: 20px;
+    text-align: center;
+    background-color: #648BC4;
+  }
+.box label{
+    font-family: 'Visby';
+    letter-spacing: 2px;
+}
+
+@media screen and (min-width: 601px) {
+    .box label {
+      font-size: 30px;
+    }
+}
+  
+  @media screen and (max-width: 600px) {
+    .box label {
+      font-size: 25px;
+    }
+}
+input{
+  width: 340px;
+}
+.myinput {
+    font-family: Visby;
+    resize: none;
+    border-radius: 15px;
+    background-color: #ffff;
+    border: 1px solid #648BC4;
+    color: #a3a3a3;
+    letter-spacing: 2px;
+    font-size:  22px;
+}
+@media screen and (min-width: 601px) {
+    .myinput {
+      font-size: 22px;
+    }
+}
+  
+  @media screen and (max-width: 600px) {
+    .myinput {
+      font-size: 18px;
+    }
+}
+@media screen and (min-width: 601px) {
+  :placeholder-shown {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :placeholder-shown {
+    font-size: 18px;
+  }
+}
+.bouton .btn{
+  font-family: 'Visby';
+  background-color: #ffff;
+  border: none;
+  color: #648BC4;
+  outline: none;
+  border-radius: 15px;
+  display: inline-block;
+  text-decoration: none;
+}
