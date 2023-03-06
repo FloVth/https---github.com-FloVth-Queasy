@@ -256,3 +256,8 @@ img.profil{
     font-size: 20px;
   }
 }
+@media screen and (min-width: 601px) {
+  .box .icon {
+    height: 30%;
+  }
+}
