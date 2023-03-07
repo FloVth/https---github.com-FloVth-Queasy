@@ -100,3 +100,203 @@ p.mdp {
     right: 62%;
     font-size: clamp(30px, 1vw, 70px)
 }
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'visby';
+    src: url('Polices/VisbyRoundCF-Heavy.otf');
+  }
+p.connect1 {
+    font-family: 'visby';
+    position: absolute;
+    top: 45%;
+    left: 44%;
+    font-size:x-large;
+    color: white;
+    font-size: clamp(30px, 1vw, 70px)
+
+}
+img.logo {
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+img.main {
+    width: 20%;
+    height: 20%;
+    margin-top: 23%;
+    margin-left: 60%;
+}
+@media (max-width: 480px) {
+    img.main {
+        margin-left: 40%;
+        margin-top: 23%;
+    }
+    
+}
+h1.titre {
+    font-family: 'visby';
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    font-size: 200%;
+}
+button {
+    position: absolute;
+    left: 46%;
+    top: 60%;
+    border-radius :25px; 
+}
+span {
+    font-family: 'visby';
+    color: #78b6fe;
+}
+form {
+    width: 20%;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+p.connect2 {
+    font-family: 'visby';
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    font-size:x-large;
+    color: white;
+    font-size: clamp(30px, 2vw, 70px)
+}
+p.nom {
+    font-size: x-large;
+    font-family: 'visby';
+    color: white;
+    position: absolute;
+    top: 39.6%;
+    right: 62%;
+    font-size: clamp(30px, 1vw, 70px)
+}
+p.mdp {
+    font-size: x-large;
+    font-family: 'visby';
+    color: white;
+    position: absolute;
+    top: 45.5%;
+    right: 62%;
+    font-size: clamp(30px, 1vw, 70px)
+}
+.classement {
+    font-family: 'visby';
+    color: white;
+    position: absolute;
+    top: 5%;
+    right: 44%;
+}
+.moi {
+    font-family: 'visby';
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    font-size: large;
+}
+.podium {
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 30%;
+    left: 32%;
+}
+.premier {
+    font-family: 'visby';
+    color: yellow;
+    position: absolute;
+    top: 28%;
+    left: 40%;
+    font-size: large;
+}
+.deuxieme {
+    font-family: 'visby';
+    color: black;
+    position: absolute;
+    top: 35%;
+    left: 32%;
+    font-size: large;
+}
+.troisieme {
+    font-family: 'visby';
+    color: black;
+    position: absolute;
+    top: 38%;
+    left: 52%;
+    font-size: large;
+}
+.reste {
+    font-family: 'visby';
+    color: white;
+    position: absolute;
+    top: 58%;
+    left: 40%;
+    font-size: large;
+    font-size: clamp(30px, 1vw, 70px)
+}
+.quatre {
+    font-family: 'visby';
+    color: white;
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    font-size: large;
+}
+.cinq {
+    font-family: 'visby';
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    font-size: large;
+}
+.six {
+    font-family: 'visby';
+    color: white;
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    font-size: large;
+}
+.sept {
+    font-family: 'visby';
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    font-size: large;
+}
+.rounded-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .rounded-button:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .rounded-button:active {
+    filter: brightness(90%);
+  }
+  
