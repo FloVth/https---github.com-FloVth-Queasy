@@ -14,9 +14,9 @@
     </head>
     <body>
         <!--LOGO DU QUEASY-->
- 
-            <img src="user.png" alt="photodeprofil" class="responsive-image" width="250" height="250">
- 
+<div class=.profil>
+            <img src="user.png" alt="photodeprofil" float= left width= 40px height= 50px>
+</div>
         
         <div class="Logo-QUEASY">
             <img src="Logo-QUEASY.png" alt="Logo du QUEASY" class="responsive-image" width="250" height="250">
