@@ -4,16 +4,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <linK rel="stylesheet" href="espace eleve.css"> 
+        <linK rel="stylesheet" href="espace_eleve.css"> 
         <link href="Polices/VisbyRoundCF-Heavy.otf" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!--favicon-->
         <link rel="shortcut icon" href="Logo-QUEASY.png"/>
-        <title>QUEASY | Espace élève</title>
+        <title>QUEASY | Espace Admin</title>
     </head>
     <body>
         <!--LOGO DU QUEASY-->
+ 
+            <img src="user.png" alt="photodeprofil" class="responsive-image" width="250" height="250">
+ 
+        
         <div class="Logo-QUEASY">
             <img src="Logo-QUEASY.png" alt="Logo du QUEASY" class="responsive-image" width="250" height="250">
         </div>
@@ -30,27 +34,33 @@
         <!--ZONE DU PROFIL-->
         <div class="container">
             <div class="profil">
-                <img src="pictogramme_edit.png" alt='pictogramme edit profil' class="profil">
-                <p class="profil">Prénom</p>
-                <p class="profil">Nom</p>
-                <p class="profil">Classe</p>
+
             </div>
         </div>
-        <!--ZONE CORRECTION-->
+        <!--ZONE GERER ELEVE-->
         <div class="wrapper">
             <div class="content">
                 <div class="box">
-                    <img src="C:\laragon\www\QUEASY\https---github.com-FloVth-Queasy\Quesay espace eleve\Commun\Check.png">
-                    <h2>Correction</h2>
-                    <p>Consulter les corrections de vos QUEASY pour apprendre de vos erreurs.</p>
-                    <a href='#' class="btn"> voir les corrections ! <i class="fa-regular fa-circle-check"></i></a>
+                    <img src="adduser.png">
+                    <h2>Gérer des élèves</h2>
+                    <p>Gérer un groupe de personnes ainsi que leurs promotions, afin de leur envoyer rapidement.</p>
+                    <a href='#' class="btn"> Ajouter ! <i class="fa-solid fa-user-plus"></i>
+
+                    </a>
                 </div>
         <!--ZONE DE RESULTAT-->
                 <div class="box">
-                    <img src="C:\laragon\www\QUEASY\https---github.com-FloVth-Queasy\Quesay espace eleve\Commun\    Trophy.png">
+                    <img src="Trophy.png">
                     <h2>Résultat</h2>
-                    <p>Regarder vos scores et le classement de votre QUEASY.</p>
+                    <p>Avec cette fonctionnalité, vous pourrez désormais voir le score des personnes ayant effectué votre quizz.</p>
                     <a href='#' class="btn">voir les résultats ! <i class="fa-solid fa-trophy"></i> </a>
+                </div>
+                 <!--ZONE DE NOUVEAU QUIZZ-->
+                <div class="box">
+                    <img src="plus.png">
+                    <h2>Gérer un nouveau Quizz</h2>
+                    <p>Gérer maintenant votre propre quizz 20 questions à créer vous attend.</p>
+                    <a href='#' class="btn"> Créer mon QUEASY ! <i class="fa-sharp fa-solid fa-circle-plus"></i></a>
                 </div>
             </div>
         </div>
