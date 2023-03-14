@@ -21,39 +21,90 @@
         </div>
         <div class="Votre_Espace">Créer votre QUEASY</div>
 
-    </body>
+        <form method="post" action="save_questions.php">
     <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
+    <label for="question1">Question 1 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>
+<div class="form-group">
+    <label for="question1">Question 2 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>
+<div class="form-group">
+    <label for="question1">Question 3 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>
+<div class="form-group">
+    <label for="question1">Question 4 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>
+<div class="form-group">
+    <label for="question1">Question 5 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>
+<div class="form-group">
+    <label for="question1">Question 6 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>
+<div class="form-group">
+    <label for="question1">Question 7 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>
+<div class="form-group">
+    <label for="question1">Question 8 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>
+<div class="form-group">
+    <label for="question1">Question 9 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>
+<div class="form-group">
+    <label for="question1">Question 10 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>    <div class="form-group">
+    <label for="question1">Question 11 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>
+<div class="form-group">
+    <label for="question1">Question 12 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>
+<div class="form-group">
+    <label for="question1">Question 13 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>
+<div class="form-group">
+    <label for="question1">Question 14 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>
+<div class="form-group">
+    <label for="question1">Question 15 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>    <div class="form-group">
+    <label for="question1">Question 16 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>
+<div class="form-group">
+    <label for="question1">Question 17 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>
+<div class="form-group">
+    <label for="question1">Question 18 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>
+<div class="form-group">
+    <label for="question1">Question 19 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>
+<div class="form-group">
+    <label for="question1">Question 20 :</label>
+    <input type="text" class="form-control" id="question1" name="question1">
+</div>
 </form>
+
+
+  <button type="submit" name="submit" class="btn btn-primary">Enregistrer</button>
+</form>
+
 </body>
 </html>
