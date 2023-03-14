@@ -13,11 +13,11 @@
         <title>QUEASY | Espace Admin</title>
     </head>
     <body>
-        <!--LOGO DU QUEASY-->
-<div class=.profil>
-            <img src="user.png" alt="photodeprofil" float= left width= 40px height= 50px>
-</div>
-        
+         <!-- ajout de la zone de l'utilisateur -->
+        <?php include 'headerutilisateur.php'; ?>
+            
+ 
+        <!-- logo du queasy -->
         <div class="Logo-QUEASY">
             <img src="Logo-QUEASY.png" alt="Logo du QUEASY" class="responsive-image" width="250" height="250">
         </div>
@@ -44,7 +44,7 @@
                     <img src="adduser.png">
                     <h2>Gérer des élèves</h2>
                     <p>Gérer un groupe de personnes ainsi que leurs promotions, afin de leur envoyer rapidement.</p>
-                    <a href='#' class="btn"> Ajouter ! <i class="fa-solid fa-user-plus"></i>
+                    <a href='gerereleve.php' class="btn"> Ajouter ! <i class="fa-solid fa-user-plus"></i>
 
                     </a>
                 </div>
@@ -60,7 +60,7 @@
                     <img src="plus.png">
                     <h2>Gérer un nouveau Quizz</h2>
                     <p>Gérer maintenant votre propre quizz 20 questions à créer vous attend.</p>
-                    <a href='#' class="btn"> Créer mon QUEASY ! <i class="fa-sharp fa-solid fa-circle-plus"></i></a>
+                    <a href='creerqueasy.php' class="btn"> Créer mon QUEASY ! <i class="fa-sharp fa-solid fa-circle-plus"></i></a>
                 </div>
             </div>
         </div>
