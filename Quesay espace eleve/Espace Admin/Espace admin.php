@@ -53,7 +53,7 @@
                     <img src="Trophy.png">
                     <h2>Résultat</h2>
                     <p>Avec cette fonctionnalité, vous pourrez désormais voir le score des personnes ayant effectué votre quizz.</p>
-                    <a href='#' class="btn">voir les résultats ! <i class="fa-solid fa-trophy"></i> </a>
+                    <a href='/QUEASY/https---github.com-FloVth-Queasy/classement.php' class="btn">voir les résultats ! <i class="fa-solid fa-trophy"></i> </a>
                 </div>
                  <!--ZONE DE NOUVEAU QUIZZ-->
                 <div class="box">
