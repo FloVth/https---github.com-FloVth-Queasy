@@ -21,90 +21,60 @@
         </div>
         <div class="Votre_Espace">Créer votre QUEASY</div>
 
+        <style>
+  .form-group {
+     
+    text-align: center;
+    margin: auto;
+    max-width: 500px;
+  }
+  .form-group label {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  .form-control {
+    font-size: 30px;
+  }
+  .btn-primary {
+    margin-left: 870px;
+    font-size: 20px;
+    padding: 10px 20px;
+  
+     
+    max-width: 500px;
+  }
+</style>
+
         <form method="post" action="save_questions.php">
+  <div class="form-group">
+    <label for="quiz_name">Nom du quizz :</label>
+    <input type="text" class="form-control" id="quiz_name" name="quiz_name">
+  </div>
+  <?php for ($i = 1; $i <= 20; $i++) { ?>
     <div class="form-group">
-    <label for="question1">Question 1 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>
-<div class="form-group">
-    <label for="question1">Question 2 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>
-<div class="form-group">
-    <label for="question1">Question 3 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>
-<div class="form-group">
-    <label for="question1">Question 4 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>
-<div class="form-group">
-    <label for="question1">Question 5 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>
-<div class="form-group">
-    <label for="question1">Question 6 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>
-<div class="form-group">
-    <label for="question1">Question 7 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>
-<div class="form-group">
-    <label for="question1">Question 8 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>
-<div class="form-group">
-    <label for="question1">Question 9 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>
-<div class="form-group">
-    <label for="question1">Question 10 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>    <div class="form-group">
-    <label for="question1">Question 11 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>
-<div class="form-group">
-    <label for="question1">Question 12 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>
-<div class="form-group">
-    <label for="question1">Question 13 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>
-<div class="form-group">
-    <label for="question1">Question 14 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>
-<div class="form-group">
-    <label for="question1">Question 15 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>    <div class="form-group">
-    <label for="question1">Question 16 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>
-<div class="form-group">
-    <label for="question1">Question 17 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>
-<div class="form-group">
-    <label for="question1">Question 18 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>
-<div class="form-group">
-    <label for="question1">Question 19 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>
-<div class="form-group">
-    <label for="question1">Question 20 :</label>
-    <input type="text" class="form-control" id="question1" name="question1">
-</div>
-</form>
-
-
+      <label for="question<?php echo $i; ?>">Question <?php echo $i; ?> :</label>
+      <input type="text" class="form-control" id="question<?php echo $i; ?>" name="question<?php echo $i; ?>">
+    </div>
+  <?php } ?>
   <button type="submit" name="submit" class="btn btn-primary">Enregistrer</button>
 </form>
+
+<?php
+// Récupérer le message de confirmation s'il y en a un
+$message = "";
+if (isset($_GET['message'])) {
+    $message = $_GET['message'];
+}
+?>
+
+<!-- Afficher le message de confirmation si nécessaire -->
+<?php if (!empty($message)): ?>
+    <div style="text-align:center; font-size: 100px; color: #9FE855;">
+        <?php echo $message; ?>
+    </div>
+<?php endif; ?>
+
+<!-- Le reste de votre code pour la création de quizz -->
 
 </body>
 </html>
