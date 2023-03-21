@@ -1,28 +1,42 @@
  
 
+ 
 <?php
-if(isset($_POST['submit'])) {
+ include("database.php");
+ $mysqlConnection = new PDO(
+    'mysql:host=' .SERVER.';dbname='.DBNAME.';charset=utf8',
+    USER,
+    PASSWORD,
+    [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],
+ );
+
+
+ if(isset($_POST['submit'])) {
+
+    $requete = $mysqlConnection->prepare('INSERT INTO quizz(titre) values(:quiz_name)');
+    $requete->execute( ["quiz_name"=>$_POST["quiz_name"]]);
+
+    $id = $mysqlConnection->lastInsertId();
+
     // Récupération des questions et des réponses
-    $questions = array();
-    for($i = 1; $i <= 21; $i++) {
-        $question = $_POST['question'.$i];
-        array_push($questions, $question);
+
+    for($i = 1; $i <= 20; $i++) {
+
+        // ordre de mission
+        $requete = $mysqlConnection->prepare('INSERT INTO question(libelle_question,fk_id_quizz) values(:question,:fk_quizz)');
+
+        //execution de la requete
+        $requete->execute( ["question"=>$_POST['question'.$i],"fk_quizz"=>$id]);
+
     }
     $quiz_name = $_POST['quiz_name'];
 
-    // Ouverture du fichier CSV pour l'écriture
-    $file = fopen('quizzes.csv', 'a');
-    // Écriture des données dans le fichier CSV
-    fputcsv($file, array($quiz_name, implode(';', $questions)));
 
-    // Fermeture du fichier
-    fclose($file);
-
-    // Afficher le message de confirmation
-$message = "Votre quizz a bien été créé !";
+$mysqlConnection = null;
+$requete = null;
+$_SESSION["success"]="Votre quizz a bien été créé !";
 header("Location: creerqueasy.php?message=".urlencode($message));
 exit();
  
-}
+ }
 ?>
- 

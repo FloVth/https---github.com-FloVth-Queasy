@@ -12,14 +12,7 @@
         <link rel="shortcut icon" href="Logo-QUEASY.png"/>
         <title>QUEASY | Espace Admin</title>
 
-<?php
-  $mysqlConnection = new PDO(
-    'mysql:host=' .SERVER.';dbname='.DBNAME.';charset=utf8',
-    USER,
-    PASSWORD,
-    [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],
-  )
-?>
+
 
 
 
@@ -27,6 +20,15 @@
 
     </head>
     <body>
+    <?php
+    include("database.php");
+    $mysqlConnection = new PDO(
+    'mysql:host='.SERVER.';dbname='.DBNAME.';charset=utf8',
+    USER,
+    PASSWORD,
+    [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],
+  )
+?>
         <!--LOGO DU QUEASY-->
         <?php include 'headerutilisateur.php'; ?>
         
