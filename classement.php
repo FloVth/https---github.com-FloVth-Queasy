@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Queasy</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='classement.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body style="background-color: #648BC4">
@@ -24,3 +24,18 @@
     <img src="podium.png" class="podium">
 </body>
 </html>
+
+<?php // Accès à la base de donnée
+     $mysqlConnection = new PDO( 
+
+        'mysql:host="https://www.db4free.net/phpMyAdmin/index.php?route=/&route=%2F&db=queasy";dbname=queasy;charset=utf8', 
+  
+        'florian', 
+  
+        'Flori@n1512' );
+?>
+
+<?php           
+
+            // Execution de la requête 
+            
