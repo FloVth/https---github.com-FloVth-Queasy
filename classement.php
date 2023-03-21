@@ -6,20 +6,14 @@
     <title>Queasy</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='classement.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body style="background-color: #648BC4">
     <img src="Logo-QUEASY.png" class="logo">
     <h1 class="classement">Votre Classement</h1>
-    <p class="moi">Vous êtes 4ème (16 points)</p>
-    <p class="premier">Florian Vauthier | 20 points</p>
-    <p class="deuxieme">Luca Haser | 18 points</p>
-    <p class="troisieme">George Malin | 17 points</p>
+
     <p class="reste">Reste du classement</p>
-    <p class="quatre">4. Ethan Delbos | 16 points</p>
-    <p class="cinq">5. Jerry Can | 14 points</p>
-    <p class="six">6. Edgar Atoi | 12 points</p>
-    <p class="sept">7. Ella de Bonzieux | 5 points</p>
 
     <img src="podium.png" class="podium">
 </body>
@@ -28,14 +22,26 @@
 <?php // Accès à la base de donnée
      $mysqlConnection = new PDO( 
 
-        'mysql:host="https://www.db4free.net/phpMyAdmin/index.php?route=/&route=%2F&db=queasy";dbname=queasy;charset=utf8', 
+        'mysql:host=localhost;dbname=queasy;charset=utf8', 
   
-        'florian', 
+        'root', 
   
-        'Flori@n1512' );
+        '' );
+     
 ?>
 
-<?php           
+<?php                // Execution de la requête 
+    $sqlQuery = 'SELECT * FROM user_quiz INNER JOIN user WHERE fk_id_user=id_user';
+    $recipesStatement = $mysqlConnection->prepare($sqlQuery);
+    $recipesStatement->execute();
+    $recipes = $recipesStatement->fetchAll();
 
-            // Execution de la requête 
-            
+    
+    foreach ($recipes as $ligne){
+        ?>
+        
+        <p class="eleve_<?=$ligne['id_user_quizz']?>"><?=$ligne['fk_id_user'] ?> : <?=$ligne['note']?> points</p>
+    <?php
+    }
+    
+    ?>
