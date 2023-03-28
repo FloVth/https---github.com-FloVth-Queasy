@@ -43,20 +43,35 @@
 	</style>
 </head>
 <body>
+
+
     <?php
     $user_name = "admin";
     $user_icon = "user.png";
      ?>
 	<header>
+	<a href="compte utilisateur.php">
 		<div id="user">
 			<img src="<?php echo $user_icon; ?>" alt="Icône utilisateur">
-			<p><a href="compte utilisateur.php"><?php echo $user_name; ?></a></p>
+			<p> <?php echo $user_name; ?></p>
+
+			</a>
 </div>
 		
 <div id="retour">
 	<br>
 			<a href="Espace admin.php">Retour au menu principale</a>
 		</div>
+		<div id="retour">
+	<br>
+			<a href="afficherqueasy.php">Afficher les Queasy</a>
+		</div>
+        <div class="Logo-QUEASY"> <!--- Logo du site --->
+			<a href="Espace admin.php">
+            <img src="Logo-QUEASY.png" alt="Logo du QUEASY" class="responsive-image" width="250" height="250">
+</a>
+        </div>
+       
 
 	</header>
 </body>

@@ -16,9 +16,7 @@
         <!--LOGO DU QUEASY-->
         <?php include 'headerutilisateur.php'; ?>
         
-        <div class="Logo-QUEASY">
-            <img src="Logo-QUEASY.png" alt="Logo du QUEASY" class="responsive-image" width="250" height="250">
-        </div>
+       
         <!--TEXT VOTRE ESPACE-->
         <div class="Votre_Espace">Gestion des élèves</div>
 
