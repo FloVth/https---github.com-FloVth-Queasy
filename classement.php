@@ -41,8 +41,13 @@ include('Quesay espace eleve/Espace Admin/headerutilisateur.php');
     
     foreach ($recipes as $ligne){
         ?>
-         
-        <p class="eleve_<?=$ligne['id_user_quizz']?>">Nom prenom : <?=$ligne['note']?> points</p> 
+         <?php
+         if ($ligne['id_user_quizz'] <= 7) {
+            ?>
+            <p class="eleve_<?=$ligne['id_user_quizz']?>">Nom prenom : <?=$ligne['note']?> points</p> 
+        <?php 
+        }
+        ?>
     <?php // <?=$ligne['fk_id_user'] (le nom et prenom dans la base de donnée)
     }
     
