@@ -10,7 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body style="background-color: #648BC4">
-    <img src="Logo-QUEASY.png" class="logo">
+<?php
+include('Quesay espace eleve/Espace Admin/headerutilisateur.php');
+?>
     <h1 class="classement">Votre Classement</h1>
 
     <p class="reste">Reste du classement</p>
@@ -39,9 +41,9 @@
     
     foreach ($recipes as $ligne){
         ?>
-        
-        <p class="eleve_<?=$ligne['id_user_quizz']?>"><?=$ligne['fk_id_user'] ?> : <?=$ligne['note']?> points</p>
-    <?php
+         
+        <p class="eleve_<?=$ligne['id_user_quizz']?>">Nom prenom : <?=$ligne['note']?> points</p> 
+    <?php // <?=$ligne['fk_id_user'] (le nom et prenom dans la base de donnée)
     }
     
     ?>
