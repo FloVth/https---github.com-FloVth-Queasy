@@ -34,10 +34,14 @@
     [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],
     );
 
-       
-echo $_GET["id"];
+       ?>
 
-?>
+<div class="row justify-content-center">
+    <div class="col-8 text-center">
+        <h1><?php echo $_GET["id"]; ?></h1>
+    </div>
+</div>
+
 
 <?php
 
@@ -57,26 +61,33 @@ $requete = null;
 
 
 
-    <div class="row">
-        <div class="col">
-            <table class="table">
-                <thead>
+<div class="row justify-content-center">
+    <div class="col-8">
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    <th scope="col">N°</th>
+                    <th scope="col">Question</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($questions as $ligne) { ?>
                     <tr>
-                        <th scope="col">N°</th>
-                        <th scope="col">Question</th>
+                        <td><?= $ligne["id_question"] ?></td>
+                        <td><?= $ligne["libelle_question"]?></td>
                     </tr>
-                </thead>
-                <tbody>
-                    <?php foreach ($questions as $ligne) { ?>
-                        <tr>
-                            <td><?= $ligne["id_question"] ?></td>
-                            <td><?= $ligne["libelle_question"]?></td>
-                        </tr>
-                    <?php } ?>
-                </tbody>
-            </table>
-        </div>
+                <?php } ?>
+            </tbody>
+        </table>
     </div>
+</div>
+
+<style>
+    table {
+        margin: auto;
+    }
+</style>
+
 </body>
 </html>
 
