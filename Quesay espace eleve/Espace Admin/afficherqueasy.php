@@ -32,4 +32,4 @@
         <!--LOGO DU QUEASY-->
         <?php include 'headerutilisateur.php'; ?>
         
-        <div class="Votre_Espace">Vos Queasy déjà crée</div>
+        <div class="Votre_Espace">Vos Queasy déjà créés</div>
