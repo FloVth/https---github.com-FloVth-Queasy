@@ -39,9 +39,9 @@
     
     foreach ($recipes as $ligne){
         ?>
-        
-        <p class="eleve_<?=$ligne['id_user_quizz']?>"><?=$ligne['fk_id_user'] ?> : <?=$ligne['note']?> points</p>
-    <?php
+         
+        <p class="eleve_<?=$ligne['id_user_quizz']?>">Nom prenom : <?=$ligne['note']?> points</p> 
+    <?php // <?=$ligne['fk_id_user'] (le nom et prenom dans la base de donnée)
     }
     
     ?>
