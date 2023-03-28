@@ -38,14 +38,38 @@ echo $_GET["id"];
 
 
 // Récupérer les titres et les IDs des quiz depuis la base de données
-$requete = $mysqlConnection->prepare('SELECT id_quizz, titre FROM quizz');
+$requete = $mysqlConnection->prepare ('SELECT * FROM question q INNER JOIN quizz qu on q.fk_id_quizz=qu.id_quizz');
 //execution de la requete
 $requete->execute();
 
-$ateliers = $requete->fetchAll();
+$questions = $requete->fetchAll();
 $mysqlConnection = null;
 $requete = null;
 
 ?>
+
+</div>
+  <div class="row">
+    <div class="col">
+    <table class="table">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">Question</th>
+ 
+  
+        </tr>
+    </thead>
+    <tbody>
+    <?php
+        foreach ($questions as $ligne){
+            ?>  
+            <tr>
+                <th scope="row"><?= $ligne["id_question"] ?></th>
+                <td><?= $ligne["libelle_question"]?></td>
+   
+                <?php
+        }
+        ?>
 
 

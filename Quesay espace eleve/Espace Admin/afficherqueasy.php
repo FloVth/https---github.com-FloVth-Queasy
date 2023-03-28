@@ -47,7 +47,7 @@
   //execution de la requete
   $requete->execute();
  
-  $ateliers = $requete->fetchAll();
+  $quizz = $requete->fetchAll();
   $mysqlConnection = null;
   $requete = null;
  
@@ -69,7 +69,7 @@
     </thead>
     <tbody>
     <?php
-        foreach ($ateliers as $ligne){
+        foreach ($quizz as $ligne){
             ?>  
             <tr>
                 <th scope="row"><?= $ligne["id_quizz"] ?></th>
