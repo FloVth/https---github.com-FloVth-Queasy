@@ -20,6 +20,11 @@
 
     </head>
     <body>
+
+      <!--LOGO DU QUEASY-->
+      <?php include 'headerutilisateur.php'; ?>
+        
+        <div class="Votre_Espace">Vos Queasy déjà créés</div>
     <?php
     include("database.php");
     $mysqlConnection = new PDO(
@@ -38,9 +43,9 @@ echo $_GET["id"];
 
 
 // Récupérer les titres et les IDs des quiz depuis la base de données
-$requete = $mysqlConnection->prepare ('SELECT * FROM question q INNER JOIN quizz qu on q.fk_id_quizz=qu.id_quizz');
+$requete = $mysqlConnection->prepare ('SELECT * FROM question q INNER JOIN quizz qu on q.fk_id_quizz=qu.id_quizz WHERE id_quizz=:id');
 //execution de la requete
-$requete->execute();
+$requete->execute(["id"=>$_GET["id"]]);
 
 $questions = $requete->fetchAll();
 $mysqlConnection = null;
