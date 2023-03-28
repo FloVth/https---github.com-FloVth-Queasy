@@ -36,10 +36,10 @@
 
        
 echo $_GET["id"];
+
 ?>
 
 <?php
-
 
 
 // Récupérer les titres et les IDs des quiz depuis la base de données
@@ -53,13 +53,16 @@ $requete = null;
 
 ?>
 
-</div>
+
+
+
+
   <div class="row">
     <div class="col">
     <table class="table">
     <thead>
         <tr>
-        <th scope="col">#</th>
+        <th scope="col">N°</th>
         <th scope="col">Question</th>
  
   
