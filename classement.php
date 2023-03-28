@@ -50,5 +50,4 @@ include('Quesay espace eleve/Espace Admin/headerutilisateur.php');
         ?>
     <?php // <?=$ligne['fk_id_user'] (le nom et prenom dans la base de donnée)
     }
-    
     ?>
