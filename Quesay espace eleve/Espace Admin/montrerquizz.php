@@ -57,27 +57,26 @@ $requete = null;
 
 
 
-  <div class="row">
-    <div class="col">
-    <table class="table">
-    <thead>
-        <tr>
-        <th scope="col">N°</th>
-        <th scope="col">Question</th>
- 
-  
-        </tr>
-    </thead>
-    <tbody>
-    <?php
-        foreach ($questions as $ligne){
-            ?>  
-            <tr>
-                <th scope="row"><?= $ligne["id_question"] ?></th>
-                <td><?= $ligne["libelle_question"]?></td>
-   
-                <?php
-        }
-        ?>
-
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">N°</th>
+                        <th scope="col">Question</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($questions as $ligne) { ?>
+                        <tr>
+                            <td><?= $ligne["id_question"] ?></td>
+                            <td><?= $ligne["libelle_question"]?></td>
+                        </tr>
+                    <?php } ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
 
