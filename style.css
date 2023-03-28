@@ -213,7 +213,7 @@ p.mdp {
     top: 30%;
     left: 32%;
 }
-.premier {
+.eleve_1 {
     font-family: 'visby';
     color: yellow;
     position: absolute;
@@ -221,7 +221,7 @@ p.mdp {
     left: 40%;
     font-size: large;
 }
-.deuxieme {
+.eleve_2 {
     font-family: 'visby';
     color: black;
     position: absolute;
@@ -229,7 +229,7 @@ p.mdp {
     left: 32%;
     font-size: large;
 }
-.troisieme {
+.eleve_3 {
     font-family: 'visby';
     color: black;
     position: absolute;
